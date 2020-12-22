@@ -4,6 +4,8 @@ metadata:
   name: myapp-loadbalancer
 spec:
   type: LoadBalancer
+  externalIPs:
+  - 10.0.2.15
   selector:
     app: myapp
   ports:
